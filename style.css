@@ -1,0 +1,118 @@
+/* Estilos Base e Checkbox */
+input[type="checkbox"] {
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    border: 2px solid rgba(16, 185, 129, 0.3);
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease;
+    background: #0a141d;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #10b981;
+    border-color: #10b981;
+}
+
+input[type="checkbox"]:checked::after {
+    content: '✓';
+    position: absolute;
+    color: #0a141d;
+    font-weight: 900;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.item-row {
+    transition: all 0.3s ease;
+    border-radius: 1.25rem;
+    border: 1px solid transparent;
+}
+
+.item-row:hover {
+    background: rgba(255, 255, 255, 0.03);
+    border-color: rgba(16, 185, 129, 0.1);
+}
+
+.checked span {
+    text-decoration: line-through;
+    color: #4b5563;
+}
+
+.history-card {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    background: #111d27;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1) hue-rotate(90deg);
+}
+
+/* MODO CLARO */
+body.light-mode {
+    background-color: #f1f5f9;
+    color: #334155;
+}
+
+body.light-mode .text-white,
+body.light-mode .header-title,
+body.light-mode .main-title,
+body.light-mode .history-title,
+body.light-mode h3 {
+    color: #0f172a !important;
+}
+
+body.light-mode .card-container,
+body.light-mode .history-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+}
+
+body.light-mode .card-header,
+body.light-mode .carrinho-header,
+body.light-mode .card-footer {
+    background-color: #f8fafc !important;
+    border-color: #e2e8f0 !important;
+}
+
+body.light-mode input {
+    background: #ffffff !important;
+    border-color: #cbd5e1 !important;
+    color: #0f172a !important;
+}
+
+body.light-mode .item-row:hover {
+    background: #f1f5f9;
+}
+
+body.light-mode input[type="checkbox"] {
+    background: #ffffff;
+    border-color: #94a3b8;
+}
+
+body.light-mode input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: none;
+}
+
+body.light-mode .site-footer {
+    border-color: #e2e8f0;
+}
+
+body.light-mode .footer-brand {
+    color: #065f46;
+}
+
+body.light-mode .footer-text {
+    color: #475569;
+}
+
+body.light-mode .footer-copy {
+    color: #94a3b8;
+}
+
+body.light-mode .checked span {
+    color: #94a3b8;
+}
