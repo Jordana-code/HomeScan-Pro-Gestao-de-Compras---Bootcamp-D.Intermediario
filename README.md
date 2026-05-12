@@ -11,7 +11,7 @@ O **HomeScan Pro** é uma solução completa para gestão de listas de compras, 
 ---
 
 ## 🚀 Link do Deploy:
-[https://homescan-pro.vercel.app](https://homescan-pro.vercel.app)
+[Acessar Projeto](https://jordana-code.github.io/HomeScan-Pro-Gestao-de-Compras---Bootcamp-D.Intermediario/)
 
 ## 🛠️ Stack Tecnológica
 - **Frontend:** HTML5, Tailwind CSS, JavaScript (ES6+).
